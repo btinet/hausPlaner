@@ -1,4 +1,4 @@
-package edu.tk;
+package edu.tk.entity;
 
 import edu.tk.entity.Floor;
 
@@ -9,7 +9,7 @@ public class House {
     private final ArrayList<Floor> floors = new ArrayList<>();
 
     public House() {
-        floors.add(new Floor());
+        floors.add(new Floor(this));
     }
 
     public ArrayList<Floor> getFloors() {
